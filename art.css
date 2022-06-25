@@ -2,7 +2,7 @@
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
     text-align: center;
     font-family: arial;
@@ -75,6 +75,7 @@
   text-align: justify;
   font-family: arial;
 }
+<<<<<<< HEAD
 .dropdown {
   position: relative;
   display: inline-block;
@@ -103,4 +104,9 @@ margin-top: 7%;
   float: right;
   margin-right: 5%;
   margin-top: 15%;
+=======
+.flex {
+  display: flex;
+  justify-content: space-between;
+>>>>>>> 3c3a61107b5cc428b61d68a03767f1ba9d0df152
 }
