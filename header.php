@@ -36,10 +36,15 @@ function closeNav() {
 <div id="mySidenav" class="sidenav">
 <a href="index.php">HOME</a>
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
+  <a href="about.php">About</a>
   <a href="#">Services</a>
   <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a class="dropdown" href="#">Contact
+  <div class="dropdown-content">
+    <p>+0361-12387</p>
+  </div>
+  </a>
+
 </div>
 </body>
 </html>
