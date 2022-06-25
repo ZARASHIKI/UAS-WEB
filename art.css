@@ -92,3 +92,15 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.left{
+float: left;
+max-width: 500px;
+margin-left: 7%;
+margin-top: 7%;
+
+}
+.right{
+  float: right;
+  margin-right: 5%;
+  margin-top: 15%;
+}
