@@ -4,7 +4,7 @@ $anime  = $conn->query("select * from post where id='$id'");
 $row    = mysqli_fetch_array($anime);
 $conn->query("DELETE from Post  WHERE id='$id'");
 header("location: index.php");
-?>
+?> window.location="http://localhost/UAS_WEB/admin/";
 
 
 

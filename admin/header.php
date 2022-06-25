@@ -6,8 +6,9 @@
 <body>
     
 <div class="header">
- <h1><a href="index.php?">MY BLOG</a></h1>
- <p>Mari Berbagi Cerita</p>
+ <h1><a href="index.php?">Sepatoes.id</a></h1>
+ <p>Gayakan Style mu dengan Sepatos!</p>
+ <p>
 </div>
 <?php require "../koneksi.php"; ?>
 <!-- Menampikan kolom sebelah kiri -->

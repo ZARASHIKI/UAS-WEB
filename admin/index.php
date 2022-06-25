@@ -1,44 +1,50 @@
-<?php
-include "header.php";
+<?php include "header.php";?>
+<?php include "footer.php";?>
+<div class="">
+<img src="upload/2802364.jpg" alt="Snow" style="width: 100%;opacity:80% ;height: 500px;">
+  <div class="centered" >
+  <div class="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </div>
+</div>    
+<div id="mySidenav" class="sidenav">
+<a href="index.php">HOME</a>
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+</div>
+</div>
+<div class="row">
+  <div class="column">
+  <div class="card">
+  <img src="upload/40.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div> 
+<div class="card">
+  <img src="upload/40.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div> 
+<div class="card">
+  <img src="upload/40.jpg" alt="Denim Jeans" style="width:100%">
+  <h1>Tailored Jeans</h1>
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans..</p>
+  <p><button>Add to Cart</button></p>
+</div> 
 
-if(isset($_POST["ngapain"]) && $_POST["ngapain"] == 'insert')
+</div>
+</div>
 
-if($_POST["ngapain"] == 'insert') {
-    $target_dir = "../uploads/";
-    $target_file = $target_dir . basename($_FILES["image"]["name"]);
-    move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-    $title = $_POST['title'];
-    $content = $_POST['content'];
-    $image = $_FILES["image"]["name"];
-    $conn->query("INSERT INTO Post set title='$title', content='$content', image='$image'");
- }
-if(isset($_POST["submit"]) && $_POST["submit"] == 'update') 
-
-if($_POST["submit"] == 'update'){
-    $target_dir = "../uploads/";
-    $target_file = $target_dir . basename($_FILES["image"]["name"]);
-    move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-    $title = $_POST['title'];
-    $id = $_POST['id_anime'];
-    $content = $_POST['content'];
-    $gmb = $_FILES["image"]["name"];
-    $conn->query("UPDATE Post set title='$title',content='$content', image='$gmb' WHERE id='$id'");
-}
-
-$posts = $conn->query("SELECT * FROM Post");
-?>
-<a href="insert.php"><div class="footer">Buat artikel</div></a>
-<?php
-while($post = $posts->fetch_object()) {
- ?>
-   <div class="card">
-       <a href="../post.php?id=<?php echo $post->id ?>"><h2><?php echo $post->title; ?></h2></a>
-       <h5><?php echo $post->createdAt; ?></h5>
-       <div><img src ="../uploads/<?php echo $post->image ?>"width= "100%"></div>
-       <a href="update.php?id=<?php echo $post->id ?>">Edit</a>
-       <a href="delete.php?id=<?php echo $post->id ?>" onclick ="return confirm('Apakah kamu yakin akan menghapus?')">delete</a>
-   </div>
-   <?php
-}
-?>
-<?php include "../footer.php" ?>
