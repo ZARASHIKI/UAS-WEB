@@ -21,10 +21,10 @@ while($post = $posts->fetch_object()) {
   <div class="column">
   <div class="card">
   <div><img src ="upload/<?php echo $post->image ?>"width= "100%"></div>
-  <a href="post.php?id=<?php echo $post->id ?>"><h2><?php echo $post->title; ?></h2></a>
+  <a href="post.php?id=<?php echo $post->id ?>"><h2 class="btn btn-outline-secondary"><?php echo $post->title; ?></h2></a>
   <p class="price"><?php echo $post->harga; ?></p>
   <p><?php echo $post->short; ?></p>
-  <p><button>Buy Now</button></p>
+  <p><a href="buy.php"><button>Buy Now</button></a></p>
   </div>
 </div>
 </div>

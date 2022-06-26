@@ -1,3 +1,4 @@
+
 <?php require "../koneksi.php"; ?>
 <!doctype html>
 <html lang="en">
@@ -14,12 +15,10 @@
   <body>
   <div class="header">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  <a class="btn btn-outline-light" href="login.php" role="button" style="position: absolute;
-    left: 85%;top: 7px;">LOGIN</a>
-  <a class="btn btn-outline-light" href="login.php" role="button" style="position: absolute;
-    left: 91%;top: 7px;">REGISTER</a>
+  <a class="btn btn-outline-light" href="logout.php" role="button" style="position: absolute;
+    left: 90%;top: 7px;">LOGOUT</a>
   <a class="btn btn-outline-light" href="insert.php" role="button" style="position: absolute;
-    left: 47%;top: 7px;">Buat Produk Baru</a>
+    left: 46%;top: 7px;">Buat Produk Baru</a>
   </div>
   
   <script>
@@ -36,7 +35,7 @@ function closeNav() {
   </script>
 
 <div id="mySidenav" class="sidenav">
-<a href="index.php">HOME</a>
+<a href="../index.php">HOME</a>
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#">About</a>
   <a href="#">Services</a>

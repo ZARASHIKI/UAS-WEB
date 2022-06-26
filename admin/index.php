@@ -1,5 +1,4 @@
 <?php include "header.php";?>
-<?php include "../footer.php";?>
 <div class="">
 <img src="../upload/bcd.jpeg" alt="Snow" style="width: 100%;opacity:70% ;height: 500px;">
   <div class="centered" >
@@ -63,4 +62,3 @@ while($post = $posts->fetch_object()) {
    <?php
 }
 ?>
-
