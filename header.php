@@ -14,10 +14,8 @@
   <body>
   <div class="header">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  <a style="position: absolute;
-    left: 85%;top: 7px;"></a>
-  <a style="position: absolute;
-    left: 91%;top: 7px;"></a>
+  <a href=index.php style="position: absolute;left: 93%;bottom: -20px;"><img src="upload/logo1.png" alt="Snow" style="width: 100%;opacity:70% ;"></a>
+  
   </div>
   
   <script>

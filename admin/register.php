@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  
-    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet"href="login.css">
 </head>
 <body>
     <div class="container">

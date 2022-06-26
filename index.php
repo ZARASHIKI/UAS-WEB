@@ -17,8 +17,8 @@
 <?php $posts = $conn->query("SELECT * FROM Post");
 while($post = $posts->fetch_object()) {
   ?>
-<div class="">
-  <div class="column">
+<div class="column">
+  <div class="">
   <div class="card">
   <div><img src ="upload/<?php echo $post->image ?>"width= "100%"></div>
   <a href="post.php?id=<?php echo $post->id ?>"><h2 class="btn btn-outline-secondary"><?php echo $post->title; ?></h2></a>

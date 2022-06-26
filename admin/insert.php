@@ -2,8 +2,6 @@
 include "header.php"
 ?>
        
-<div class="row">
-  <div class="column">
   <div class="card">
   
     <a>Produk Baru</a>
