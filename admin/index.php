@@ -39,17 +39,6 @@ if($_POST["submit"] == 'update'){
     $harga = $_POST['harga'];
     $conn->query("UPDATE Post set title='$title',content='$content', image='$gmb', harga = '$harga' WHERE id='$id'");
 }
-if(isset($_POST["belajar"]) && $_POST["belajar"] == 'update') {   $target_dir = "../upload/";
-  $target_file = $target_dir . basename($_FILES["image"]["name"]);
-  move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
-  $title = $_POST['title'];
-  $content = $_POST['content'];
-  $image = $_FILES["image"]["name"];
-  $id = $_POST['apalah'];
-  $conn->query("UPDATE Post set title='$title', content='$content', image='$image' WHERE id='$id'");
-}
- 
- 
 $posts = $conn->query("SELECT * FROM Post");
 ?>
 
