@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../art.css">
+</head>
+<body>
+    
+<div class="card" style = "position : absolute; top:30;">
+ <h1><a href="index.php?"></a></h1>
+ <p></p>
+ <p>
+=======
 
 <?php require "../koneksi.php"; ?>
 <!doctype html>
@@ -41,6 +54,7 @@ function closeNav() {
   <a href="#">Services</a>
   <a href="#">Clients</a>
   <a href="#">Contact</a>
+>>>>>>> upstream/main
 </div>
 </body>
 </html>
