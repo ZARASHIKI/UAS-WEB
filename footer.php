@@ -9,6 +9,6 @@
     
     </head>
   <div class="footer">
-    <p> Bila Sepatu hilang, beli sepatos di SEPATOS.ID</p>
+    <p> Bila Satu Sepatu hilang, beli sepatos di SEPATOS.ID</p>
   
   </div>
