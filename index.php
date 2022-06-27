@@ -14,7 +14,7 @@
 </div>    
 </div>
 </div>
-<?php $posts = $conn->query("SELECT * FROM Post");
+<?php $posts = $conn->query("SELECT * FROM post");
 while($post = $posts->fetch_object()) {
   ?>
 <div class="">

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../art.css">
 </head>
 <body>
     
-<div class="header">
- <h1><a href="index.php?">Sepatoes.id</a></h1>
- <p>Gayakan Style mu dengan Sepatos!</p>
+<div class="card" style = "position : absolute; top:30;">
+ <h1><a href="index.php?"></a></h1>
+ <p></p>
  <p>
 </div>
 <?php require "../koneksi.php"; ?>
