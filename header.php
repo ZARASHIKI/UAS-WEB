@@ -14,10 +14,8 @@
   <body>
   <div class="header">
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-  <a class="btn btn-outline-light" href="login.php" role="button" style="position: absolute;
-    left: 85%;top: 7px;">LOGIN</a>
-  <a class="btn btn-outline-light" href="login.php" role="button" style="position: absolute;
-    left: 91%;top: 7px;">REGISTER</a>
+  <a href=index.php style="position: absolute;left: 93%;bottom: -20px;"><img src="upload/logo1.png" alt="Snow" style="width: 100%;opacity:70% ;"></a>
+  
   </div>
   
   <script>
@@ -36,10 +34,17 @@ function closeNav() {
 <div id="mySidenav" class="sidenav">
 <a href="index.php">HOME</a>
 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="about.php">About</a>
+  <a class="dropdown" href="#">Contact
+  <div class="dropdown-content">
+    <p>+0361-12387</p>
+  </div>
+  
+  <a href="admin/login.php" style="position: relative;
+    top: 63%;border-top-style: solid;
+    border-top-width: 1px;font-size: 12pt;width: 150px;">ADMIN</a>
+  </a>
+
 </div>
 </body>
 </html>

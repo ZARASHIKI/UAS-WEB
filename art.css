@@ -6,6 +6,7 @@
     margin: auto;
     text-align: center;
     font-family: arial;
+    
   }
   
 .price {
@@ -29,20 +30,16 @@
     opacity: 0.7;
   }
 .row {
-  display: flex;
-  flex-wrap: nowrap;
-    
+  margin: 0 -5px;
   }
     
 .column {
-    float: left;
-    width: 30%;
-    padding: 15px;
-    column-count: 0;
-    column-width: 100%;
-    position:relative;
-    left: 2%;
-    
+  float: left;
+  width: 25%;
+  padding: 10px;
+  position: relative;
+  left: 3.5%;
+  margin-left: 5%;
   }
   
   /* Clearfix (clear floats) */
@@ -56,15 +53,7 @@
     font-weight: bold;
     font-family:'Lucida Sans';
 }
-.ri{
-    position: absolute;
-    left: 90%;
-}
-.de{
-  position: absolute;
-  top: 15%;
-  max-width: 50%;
-}
+
 .card2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -74,4 +63,51 @@
   height: 300px;
   text-align: justify;
   font-family: arial;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.left{
+float: left;
+max-width: 500px;
+margin-left: 7%;
+margin-top: 7%;
+
+}
+.right{
+  float: right;
+  margin-right: 5%;
+  margin-top: 15%;
+  width: 500px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.de{
+  position: absolute;
+  top: 22%;
+  left: 5%;
+  max-width: 40%;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
